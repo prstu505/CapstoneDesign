@@ -1,0 +1,78 @@
+.editorContainer {
+  padding: 20px;
+  background-color: #f0f8ff;
+  border: 1px solid #b0c4de;
+  border-radius: 8px;
+  width: 80%;
+  min-width: 600px; /* 최소 너비 설정 */
+  margin: 20px auto;
+  box-sizing: border-box; /* 패딩과 보더를 포함한 전체 크기를 지정 */
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.toolbar {
+  background-color: #87cefa;
+  border-bottom: 1px solid #b0c4de;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor {
+  border: 1px solid #b0c4de;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  min-height: 400px; /* 최소 높이 설정 */
+  max-width: 100%;
+  overflow: auto;
+  word-wrap: break-word; /* 단어 줄바꿈 설정 */
+}
+
+.transformButton {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.transformButton:hover {
+  background-color: #1c86ee;
+}
+
+.popup {
+  position: absolute;
+  z-index: 10;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #b0c4de;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* 팝업 최대 너비 설정 */
+}
+
+.suggestionsList {
+  padding: 0;
+  max-height: 300px; /* 리스트 최대 높이 설정 */
+  overflow-y: auto; /* 리스트 내용이 넘칠 경우 스크롤 생성 */
+}
+
+.suggestionsListItem {
+  cursor: pointer;
+  font-size: 14px; /* 폰트 크기 줄이기 */
+  word-wrap: break-word; /* 단어 줄바꿈 설정 */
+}
